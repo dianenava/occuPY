@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Welcome to the Gym!</h1>
+
+<p> What a lovely day!</p>
+
+
+<p>The time is now: <span id="datetime"></span></p>
+
+<p>Here is the floor plan of the gym.</p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+    
+<body>
+
+<img src="{{ url_for('static',filename='rooms.png') }}">
+
+
+<form method=POST enctype=multipart/form-data action="{{ url_for('upload') }}">
+        
+        
+        <input type="submit" value="Reserve">
+        <input type="submit" value="Reserve">
+        <input type="submit" value="Reserve">
+        <input type="submit" value="Reserve">
+    </form>
+<table>
+<thead><tr><th>location</th><th>level of activity here</th></tr></thead>
+<tbody>
+<tr><td>Room 1:</td><td>FULL</td></tr>
+<tr><td>Room 2:</td><td>OK</td></tr>
+<tr><td>Room 3:</td><td>FULL</td></tr>
+<tr><td>Room 4:</td><td>OK</td></tr>
+<tr><td>bathrooms:</td><td>don't go in here</td></tr>
+</tbody>
+</table>
+
+
+<p>Enjoy your workout! </p>
+
+</body>
+</form>
+<img  src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.edrawsoft.com%2Ftemplates%2Fimages%2Fgym-design-floor-plan.png&imgrefurl=https%3A%2F%2Fwww.edrawsoft.com%2Ftemplate-gym-design-floor-plan.php&docid=1yPhUl7KE7N6CM&tbnid=UbPU3TwKAUa5IM%3A&vet=10ahUKEwjgjMjrlOPYAhUP3mMKHSQqBh0QMwi-ASgAMAA..i&w=650&h=425&bih=700&biw=751&q=gym%20layout&ved=0ahUKEwjgjMjrlOPYAhUP3mMKHSQqBh0QMwi-ASgAMAA&iact=mrc&uact=8"  alt=""  /> 
+</body>
+</html>

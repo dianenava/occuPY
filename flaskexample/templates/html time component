@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jan 24 09:50:20 2018
+
+@author: diane
+"""
+
+<div class="btn-group">
+  <a href="#" class="btn btn-default">Select a time</a>
+  <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" name="timeinterval" aria-expanded="false"><span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="#">12:00</a></li>
+    <li><a href="#">12:10</a></li>
+    <li><a href="#">12:20</a></li>
+    <li><a href="#">12:30</a></li>
+    <li><a href="#">12:40</a></li>
+    <li><a href="#">12:50</a></li>    
+    <li><a href="#">12:50</a></li>   
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+    
