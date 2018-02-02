@@ -42,9 +42,8 @@
     <div class="container">
 
     <div class="starter-template">
-        <h2>Welcome to occuPY, our new equipment tracker</h2>
-        <h2>Above is a map of your registered devices</h2>
-        <h2>locate your equipment! </h2>
+        <h2>Welcome, select equipment to track</h2>
+      
        <iframe width="560" height="315" src="https://www.youtube.com/embed/vmQ5p7zbAY0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
@@ -62,23 +61,54 @@
     <div class="form-group">
   
   <!-- /.  COPY THIS  "{{ url_for('get_activity_machine') }}"-->
-    <form  action="{{ url_for('get_activity_machine') }}" method="GET">
-    <label for="timeinterval">Select a time from the dropdown list</label>
-       <select class="form-control" name='timeinterval' id="timeinterval" >
-        <option value=1>Elliptical 1</option>
-      <option value=2>Elliptical 2</option>
-      <option value=3>Elliptical 3</option>
-      <option value=4>Elliptical 4</option>
-      <option value=5>Elliptical 5</option>
-      <option value=6>Elliptical 6</option>
-     <option value=7>Elliptical 6</option>
-    </select>
-     <button type="submit" class="btn btn-default btn-lg">Perform analytics!</button>
-  </div>
-  </form>
+
 </div>
     
     
+
+  
+  <br>
+     
+      <form  action="{{ url_for('out_machine1') }}" method="GET">
+<div class = "container">
+     <button type="submit" class="btn btn-default btn-lg">Track machine 1</button>
+  </div>
+  </form>
+      <br>
+      <form  action="{{ url_for('out_machine2') }}" method="GET">
+<div class = "container">
+     <button type="submit" class="btn btn-default btn-lg">Track machine 2</button>
+  </div>
+  </form>
+      <br>
+      <form  action="{{ url_for('out_machine3') }}" method="GET">
+<div class = "container">
+     <button type="submit" class="btn btn-default btn-lg">Track machine 3</button>
+  </div>
+  </form>
+    <br>
+    <form  action="{{ url_for('out_machine4') }}" method="GET">
+<div class = "container">
+     <button type="submit" class="btn btn-default btn-lg">Track machine 4</button>
+  </div>
+  </form>
+    <br>
+  <form  action="{{ url_for('out_machine5') }}" method="GET">
+<div class = "container">
+     <button type="submit" class="btn btn-default btn-lg">Track machine 5</button>
+  </div>
+  </form>
+    <br>
+  <form  action="{{ url_for('out_machine6') }}" method="GET">
+<div class = "container">
+     <button type="submit" class="btn btn-default btn-lg">Track machine 6</button>
+  </div>
+  </form>
+  
+    <br>
+  
+
+
       <form  action="{{ url_for('about') }}" method="GET">
     
 <div class = "container">
@@ -87,29 +117,6 @@
   </div>
   </form>
   
-  
-  <br>
-  
-      <form  action="{{ url_for('out_machine1') }}" method="GET">
-<div class = "container">
-     <button type="submit" class="btn btn-default btn-lg">Track machine 1</button>
-  </div>
-  </form>
-  <br>
-  <form  action="{{ url_for('out_machine2') }}" method="GET">
-<div class = "container">
-     <button type="submit" class="btn btn-default btn-lg">Track machine 2</button>
-  </div>
-  </form>
-  
-    <br>
-  <form  action="{{ url_for('out_machine5') }}" method="GET">
-<div class = "container">
-     <button type="submit" class="btn btn-default btn-lg">Track machine 5</button>
-  </div>
-  </form>
-  
-
 
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
